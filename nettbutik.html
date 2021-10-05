@@ -2,78 +2,30 @@
     <head>
         <meta charset="utf-8">
         <title>pc mania.com</title>
+        <link rel="stylesheet" href="resources/css/grid-container-på-netbutikk.css">
         
-        <style>
-            
+        9
 
-
-
-
-
-            .grid-container {
-                display: grid;
-                grid-template-columns: 33% 34% 33%;
-
-            }
-            .grid-item {
-                background-color: wheat;
-                border: 2px solid black;
-                padding: 20px;
-                font-size: 15px;
-                text-align: center;
-            }
-            body {
-                background-color: rgb(180, 171, 154);
-                
-            }
-                        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-            }
-
-            li {
-            float: left;
-            }
-
-            li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            }
-
-            li a:hover {
-            background-color: #111;
-            }
-            footer {
-                text-align: left;
-                border: 2px solid black;
-                padding: 3px;
-                background-color: rgb(192, 187, 180);
-                color: rgb(0, 0, 0);
-            }
-            #search{
-                text-align: center;
-            }
-            
-            
-        </style>
     </head>
     <body>
         <ul>
             <li><a class="active" href="#home">Heim</a></li>
             <li><a id="omoss" href="#footer">om oss</a></li>
+            <li><a id="pck" href="../nettbutikk/resources/html/pc komponenta.html"> pc komponentar </a></li>
+            <li><a id="pcs" href="../nettbutikk/resources/html/pc sjerm.html"> pc skjermer </a></li>
+            <li><a id="pcf" href="../nettbutikk/resources/html/ferdi laga pc.html"> ferdi laga pc og tilbehør </a></li>
             
           </ul>
           <div id="search">
-            <input type="text" placeholder="Search.." >
+            <input type="text" placeholder="Search.." > 
+
+
+
+
+            
           </div>
 
-        <h1 style="text-align: center;"> pc mania.com </h1>
+        <h1 style="text-align: center;"> pc mania.com </h1>9
         <div class="grid-container">
             <div class="grid-item">
                 <h1 style="background-color:wheat;"> pc kompnetar </h1>
@@ -92,6 +44,16 @@
             </div>
         </div>
         <h3> footer </h3>
+        <p id="j"></p>
+        <script>
+            let text = "";
+            let i = 1;
+            while (i <11) {
+                text += "<b><br>du har vore her </b> " + i;
+                i++;
+            }
+            document.getElementById("j").innerHTML = text;
+        </script>
         
         <footer id="footer">
             <p>e-mail til lagaren<br>      
@@ -100,8 +62,9 @@
             <a href="../nettbutikk/resources/html/pc sjerm.html"> pc skjerm </a> <br>
             <a href="../nettbutikk/resources/html/ferdi laga pc.html"> ferdi laga pc </a> <br>
             <a href="https://www.komplett.no/?gclid=424de354f66611c3d896826bc428326d&gclsrc=3p.ds&ds_rl=1293741&msclkid=424de354f66611c3d896826bc428326d&utm_source=bing&utm_medium=cpc&utm_campaign=NO%20-%20Brand%20-%20Komplett.no%20(Bing)&utm_term=komplett&utm_content=Komplett.no%20brand">
-            komplett </a> <br>
-             <a href="https://www.elkjop.no/"> elkjøp </a> 
+            <b>komplett</b> </a> <br>
+             <a href="https://www.elkjop.no/"> elkjøp </a><br> <br>
+             <a href="../nettbutikk/resources/html/kontakt oss.html"> kontakt oss </a>
         </footer>
     </body>
 
